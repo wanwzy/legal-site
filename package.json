@@ -1,0 +1,16 @@
+{
+  "name": "legal-site",
+  "version": "1.0.0",
+  "description": "Legal documents website",
+  "scripts": {
+    "build": "echo 'Build completed'",
+    "dev": "npx serve public"
+  },
+  "keywords": [
+    "legal",
+    "privacy",
+    "terms"
+  ],
+  "author": "",
+  "license": "MIT"
+}

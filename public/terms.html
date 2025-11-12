@@ -15,520 +15,228 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
             line-height: 1.8;
             color: #333;
-            background: #f7fafc;
+            background-color: #f5f7fa;
         }
         
         .container {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
-            background: white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 40px 20px;
         }
         
-        .header {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            color: white;
-            padding: 40px;
-            text-align: center;
+        header {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e1e8ed;
         }
         
-        .header h1 {
-            font-size: 2.5em;
+        h1 {
+            color: #2c3e50;
+            font-size: 2.4em;
             margin-bottom: 10px;
-            font-weight: 700;
         }
         
-        .header .subtitle {
-            font-size: 1.1em;
-            opacity: 0.9;
+        .back-link {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 15px;
+            display: inline-block;
         }
         
-        .content {
-            padding: 40px;
+        .back-link:hover {
+            text-decoration: underline;
         }
         
-        .meta-info {
-            background: #edf2f7;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            border-left: 4px solid #f093fb;
+        .last-update {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-top: 10px;
         }
         
-        .meta-info p {
-            margin-bottom: 8px;
-            font-weight: 600;
+        section {
+            background: white;
+            margin-bottom: 20px;
+            padding: 35px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
         
         h2 {
-            color: #2d3748;
-            font-size: 1.8em;
-            margin: 30px 0 15px 0;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #e2e8f0;
+            color: #2c3e50;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e74c3c;
         }
         
         h3 {
-            color: #4a5568;
-            font-size: 1.4em;
-            margin: 25px 0 12px 0;
-        }
-        
-        h4 {
-            color: #4a5568;
+            color: #34495e;
             font-size: 1.2em;
             margin: 20px 0 10px 0;
         }
         
         p {
             margin-bottom: 15px;
-            text-align: justify;
+            color: #555;
         }
         
-        ul, ol {
-            margin: 15px 0;
-            padding-left: 30px;
+        ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+            color: #555;
         }
         
         li {
             margin-bottom: 8px;
         }
         
-        .pricing-table {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin: 20px 0;
+        .placeholder {
+            color: #e74c3c;
+            font-weight: 500;
         }
         
-        .price-card {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            color: white;
-            padding: 20px;
-            border-radius: 15px;
+        .sla-section {
+            background: #fff3f3;
+            border-left: 4px solid #e74c3c;
+            padding-left: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        footer {
             text-align: center;
-            box-shadow: 0 4px 15px rgba(240, 147, 251, 0.4);
-        }
-        
-        .price-card h4 {
-            color: white;
-            margin-top: 0;
-            font-size: 1.3em;
-        }
-        
-        .price {
-            font-size: 2em;
-            font-weight: bold;
-            margin: 10px 0;
-        }
-        
-        .sla-highlight {
-            background: #fff5f5;
-            border: 2px solid #feb2b2;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 20px 0;
-        }
-        
-        .sla-highlight h4 {
-            color: #c53030;
-            margin-top: 0;
-        }
-        
-        .compensation-box {
-            background: #f0fff4;
-            border: 1px solid #68d391;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 20px 0;
-        }
-        
-        .compensation-box h4 {
-            color: #22543d;
-            margin-top: 0;
-        }
-        
-        .footer {
-            background: #2d3748;
-            color: white;
-            padding: 30px 40px;
-            text-align: center;
-        }
-        
-        .back-link {
-            display: inline-block;
-            background: #f093fb;
-            color: white;
-            text-decoration: none;
-            padding: 12px 24px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            transition: background 0.3s ease;
-        }
-        
-        .back-link:hover {
-            background: #d946ef;
-        }
-        
-        .update-date {
-            color: #a0aec0;
+            color: #95a5a6;
             font-size: 0.9em;
-            margin-top: 20px;
-            font-style: italic;
-        }
-        
-        strong {
-            color: #2d3748;
-        }
-        
-        .section {
-            margin-bottom: 30px;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e1e8ed;
         }
         
         @media (max-width: 768px) {
-            .pricing-table {
-                grid-template-columns: 1fr;
+            h1 {
+                font-size: 2em;
+            }
+            
+            section {
+                padding: 25px;
             }
             
             .container {
-                margin: 0;
-            }
-            
-            .content {
-                padding: 20px;
-            }
-            
-            .header {
-                padding: 30px 20px;
-            }
-            
-            h1 {
-                font-size: 2em;
+                padding: 20px 15px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>用户协议</h1>
-            <p class="subtitle">淘宝上下文服务使用协议</p>
-        </div>
-        
-        <div class="content">
-            <div class="meta-info">
-                <p><strong>版本</strong>：v1.0</p>
-                <p><strong>最后更新日期</strong>：2025年11月12日</p>
-                <p><strong>生效日期</strong>：2025年11月12日</p>
-                <p><strong>公司名称</strong>：淘宝上下文服务有限公司</p>
-            </div>
-
-            <div class="section">
-                <h2>1. 计费方式</h2>
-                
-                <h3>订阅计费模式</h3>
-                <p>我们的服务采用订阅制收费模式，按月自动续费：</p>
-                
-                <h4>基础计费原则</h4>
-                <ul>
-                    <li><strong>月度订阅</strong>：按自然月计费，每月1日自动扣费</li>
-                    <li><strong>年度订阅</strong>：享受2个月免费优惠（相当于8.3折）</li>
-                    <li><strong>按使用量计费</strong>：除基础套餐外，超量部分按次收费</li>
-                </ul>
-                
-                <h4>支付方式</h4>
-                <ul>
-                    <li><strong>支持的支付方式</strong>：支付宝、微信支付、对公转账</li>
-                    <li><strong>发票开具</strong>：支持开具增值税普通发票和专用发票</li>
-                    <li><strong>退款处理</strong>：按照服务条款第6条规定执行</li>
-                </ul>
-                
-                <h4>计费周期说明</h4>
-                <ul>
-                    <li><strong>试用期间</strong>：新用户享受7天免费试用</li>
-                    <li><strong>计费起点</strong>：试用期结束后开始计费</li>
-                    <li><strong>服务中断</strong>：账户欠费7天后暂停服务，30天后终止服务</li>
-                </ul>
-            </div>
-
-            <div class="section">
-                <h2>2. 套餐与配额</h2>
-                
-                <h3>三档套餐详情</h3>
-                
-                <div class="pricing-table">
-                    <div class="price-card">
-                        <h4>入门版套餐</h4>
-                        <div class="price">¥199/月</div>
-                        <ul style="text-align: left;">
-                            <li>调用配额：10,000次/月</li>
-                            <li>响应时间：P95<5秒</li>
-                            <li>功能限制：基础版功能</li>
-                            <li>技术支持：社区论坛支持</li>
-                            <li>超量费用：¥0.02/次</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="price-card">
-                        <h4>成长版套餐</h4>
-                        <div class="price">¥399/月</div>
-                        <ul style="text-align: left;">
-                            <li>调用配额：30,000次/月</li>
-                            <li>响应时间：P95<3秒</li>
-                            <li>功能限制：标准版功能</li>
-                            <li>技术支持：邮件技术支持</li>
-                            <li>超量费用：¥0.015/次</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="price-card">
-                        <h4>旗舰版套餐</h4>
-                        <div class="price">¥799/月</div>
-                        <ul style="text-align: left;">
-                            <li>调用配额：100,000次/月</li>
-                            <li>响应时间：P95<2秒</li>
-                            <li>功能限制：全功能版本</li>
-                            <li>技术支持：专属客服支持</li>
-                            <li>超量费用：¥0.01/次</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <h3>配额监控机制</h3>
-                <ul>
-                    <li><strong>实时监控</strong>：系统实时统计使用量</li>
-                    <li><strong>预警提醒</strong>：使用达到80%时发送预警通知</li>
-                    <li><strong>自动停用</strong>：达到100%配额后自动停用相关功能</li>
-                    <li><strong>手动升级</strong>：支持随时升级到更高套餐</li>
-                </ul>
-            </div>
-
-            <div class="section">
-                <h2>3. SLA与赔偿</h2>
-                
-                <h3>服务等级承诺</h3>
-                
-                <div class="sla-highlight">
-                    <h4>可用性SLA</h4>
-                    <ul>
-                        <li><strong>承诺标准</strong>：99.5%月度可用性</li>
-                        <li><strong>计算方式</strong>：(月度总时长-累计故障时长)/月度总时长</li>
-                        <li><strong>监控维度</strong>：API接口可用性、页面访问成功率</li>
-                    </ul>
-                </div>
-                
-                <h4>响应时间SLA</h4>
-                <ul>
-                    <li><strong>入门版承诺</strong>：P95响应时间<5秒</li>
-                    <li><strong>成长版承诺</strong>：P95响应时间<3秒</li>
-                    <li><strong>旗舰版承诺</strong>：P95响应时间<2秒</li>
-                    <li><strong>测量方式</strong>：95百分位响应时间监控</li>
-                </ul>
-                
-                <h4>错误率SLA</h4>
-                <ul>
-                    <li><strong>承诺标准</strong>：月度错误率<0.1%</li>
-                    <li><strong>计算公式</strong>：错误请求数/总请求数×100%</li>
-                    <li><strong>监控指标</strong>：API调用失败率、数据处理错误率</li>
-                </ul>
-                
-                <h3>赔偿方案</h3>
-                
-                <div class="compensation-box">
-                    <h4>可用性赔偿</h4>
-                    <ul>
-                        <li><strong>99.5%≤可用性<99%</strong>：退还当月10%服务费</li>
-                        <li><strong>98%≤可用性<99%</strong>：退还当月30%服务费</li>
-                        <li><strong>可用性<98%</strong>：退还当月100%服务费</li>
-                    </ul>
-                </div>
-                
-                <div class="compensation-box">
-                    <h4>响应时间赔偿</h4>
-                    <ul>
-                        <li><strong>连续7天超标</strong>：提供免费系统优化服务一次</li>
-                        <li><strong>连续15天超标</strong>：延长服务期限30天</li>
-                        <li><strong>连续30天超标</strong>：退还当月50%服务费</li>
-                    </ul>
-                </div>
-                
-                <div class="compensation-box">
-                    <h4>错误率赔偿</h4>
-                    <ul>
-                        <li><strong>错误率>0.5%</strong>：退还当月20%服务费</li>
-                        <li><strong>错误率>1%</strong>：退还当月50%服务费</li>
-                        <li><strong>错误率>2%</strong>：退还当月100%服务费</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2>4. 试用与退订</h2>
-                
-                <h3>试用期政策</h3>
-                
-                <h4>免费试用</h4>
-                <ul>
-                    <li><strong>试用期限</strong>：7天免费试用期</li>
-                    <li><strong>功能限制</strong>：可使用完整功能，但调用次数限制在1,000次</li>
-                    <li><strong>数据保留</strong>：试用期内数据保留30天</li>
-                    <li><strong>升级转化</strong>：试用期内升级首月享受5折优惠</li>
-                </ul>
-                
-                <h4>试用期结束处理</h4>
-                <ul>
-                    <li><strong>自动停用</strong>：试用期结束后自动停用服务</li>
-                    <li><strong>数据保留</strong>：数据保留30天，可随时申请恢复</li>
-                    <li><strong>通知提醒</strong>：到期前3天和1天分别发送提醒</li>
-                </ul>
-                
-                <h3>退订政策</h3>
-                
-                <h4>随时退订权利</h4>
-                <ul>
-                    <li><strong>退订方式</strong>：通过管理后台或客服申请退订</li>
-                    <li><strong>生效时间</strong>：申请后次月1日生效</li>
-                    <li><strong>剩余费用</strong>：已支付费用不退，剩余时间继续享受服务</li>
-                    <li><strong>数据处理</strong>：退订后30天内提供数据导出，逾期删除</li>
-                </ul>
-                
-                <h4>退款条件</h4>
-                <ul>
-                    <li><strong>试用期退款</strong>：7天试用期内可申请全额退款</li>
-                    <li><strong>SLA未达标</strong>：按照SLA赔偿标准执行退款</li>
-                    <li><strong>系统故障</strong>：连续故障超过48小时可申请退款</li>
-                    <li><strong>其他情况</strong>：不予退款</li>
-                </ul>
-            </div>
-
-            <div class="section">
-                <h2>5. 调用限额与熔断</h2>
-                
-                <h3>调用限额机制</h3>
-                
-                <h4>按套餐限额</h4>
-                <ul>
-                    <li><strong>入门版</strong>：10,000次/月，每次间隔≥1秒</li>
-                    <li><strong>成长版</strong>：30,000次/月，每次间隔≥0.5秒</li>
-                    <li><strong>旗舰版</strong>：100,000次/月，每次间隔≥0.1秒</li>
-                </ul>
-                
-                <h4>API调用限制</h4>
-                <ul>
-                    <li><strong>并发限制</strong>：同一时间最多10个并发请求（入门版），50个（成长版），200个（旗舰版）</li>
-                    <li><strong>频率限制</strong>：每分钟最多请求次数根据套餐不同</li>
-                    <li><strong>突发限制</strong>：允许短时间突发调用，但持续时间不超过1分钟</li>
-                </ul>
-                
-                <h3>熔断保护机制</h3>
-                
-                <h4>触发条件</h4>
-                <ul>
-                    <li><strong>错误率熔断</strong>：连续5分钟错误率>10%</li>
-                    <li><strong>响应时间熔断</strong>：连续5分钟平均响应时间>10秒</li>
-                    <li><strong>流量熔断</strong>：单客户流量异常超过平均值10倍</li>
-                    <li><strong>系统压力熔断</strong>：整体系统负载>80%</li>
-                </ul>
-            </div>
-
-            <div class="section">
-                <h2>6. 知识产权</h2>
-                
-                <h3>我们的知识产权</h3>
-                <ul>
-                    <li><strong>核心算法</strong>：AI模型和算法逻辑归我们所有</li>
-                    <li><strong>软件代码</strong>：系统软件、应用程序代码归我们所有</li>
-                    <li><strong>界面设计</strong>：用户界面、图标设计归我们所有</li>
-                    <li><strong>数据模型</strong>：训练好的AI模型和参数归我们所有</li>
-                </ul>
-                
-                <h3>您的权利</h3>
-                <ul>
-                    <li><strong>服务期内使用权</strong>：在服务有效期内正常使用服务</li>
-                    <li><strong>数据所有权</strong>：您上传的业务数据归您所有</li>
-                    <li><strong>生成内容权利</strong>：使用我们的服务生成的内容归您所有</li>
-                    <li><strong>定制内容权利</strong>：为您定制开发的内容归您所有</li>
-                </ul>
-            </div>
-
-            <div class="section">
-                <h2>7. 责任限制</h2>
-                
-                <h3>责任范围界定</h3>
-                
-                <h4>我们承担的责任</h4>
-                <ul>
-                    <li><strong>服务质量责任</strong>：按照SLA承诺提供服务质量保障</li>
-                    <li><strong>数据安全责任</strong>：保护您的数据安全和隐私</li>
-                    <li><strong>合规责任</strong>：确保服务符合相关法律法规要求</li>
-                    <li><strong>技术支持责任</strong>：提供必要的技术支持和维护</li>
-                </ul>
-                
-                <h4>我们的免责事项</h4>
-                <ul>
-                    <li><strong>不可抗力</strong>：地震、洪水、火灾等自然灾害</li>
-                    <li><strong>第三方故障</strong>：淘宝平台API故障、网络运营商故障</li>
-                    <li><strong>用户过错</strong>：用户操作不当、账户泄露、违规使用</li>
-                    <li><strong>系统升级</strong>：计划内的系统维护和升级</li>
-                </ul>
-                
-                <h3>赔偿限额</h3>
-                
-                <div class="sla-highlight">
-                    <h4>责任上限</h4>
-                    <ul>
-                        <li><strong>总赔偿限额</strong>：我们承担的赔偿责任不超过您支付的年度服务费</li>
-                        <li><strong>间接损失免责</strong>：不承担间接损失、利润损失、商誉损失等</li>
-                        <li><strong>第三方损失免责</strong>：不承担因第三方服务导致的损失</li>
-                        <li><strong>数据恢复免责</strong>：不承担数据恢复失败导致的损失</li>
-                    </ul>
-                </div>
-                
-                <h4>特别声明</h4>
-                <ul>
-                    <li><strong>AI生成内容</strong>：AI生成内容仅供参考，我们不对生成结果的准确性承担责任</li>
-                    <li><strong>业务决策</strong>：基于我们服务做出的业务决策风险由您自行承担</li>
-                    <li><strong>数据备份</strong>：建议您自行备份重要数据，我们不承担数据丢失责任</li>
-                    <li><strong>合规风险</strong>：业务合规性由您自行负责，我们仅提供技术支持</li>
-                </ul>
-            </div>
-
-            <div class="section">
-                <h2>8. 适用法律与争议解决</h2>
-                
-                <h3>适用法律</h3>
-                <p>本协议受中华人民共和国法律管辖，包括但不限于：</p>
-                <ul>
-                    <li>《中华人民共和国合同法》</li>
-                    <li>《中华人民共和国网络安全法》</li>
-                    <li>《中华人民共和国数据安全法》</li>
-                    <li>《中华人民共和国个人信息保护法》</li>
-                    <li>《中华人民共和国消费者权益保护法》</li>
-                </ul>
-                
-                <h3>管辖法院</h3>
-                <p>因本协议产生的争议将由以下法院管辖：</p>
-                <ul>
-                    <li><strong>协议履行地</strong>：北京市朝阳区人民法院</li>
-                    <li><strong>被告住所地</strong>：被告所在地有管辖权的人民法院</li>
-                    <li><strong>合同签订地</strong>：合同签订地有管辖权的人民法院</li>
-                </ul>
-                
-                <h3>争议解决机制</h3>
-                <ol>
-                    <li><strong>协商解决</strong>：争议发生后，双方应首先通过友好协商解决（30天期限）</li>
-                    <li><strong>调解解决</strong>：如协商不成，可申请相关调解机构调解</li>
-                    <li><strong>仲裁解决</strong>：提交北京仲裁委员会仲裁，仲裁裁决为终局裁决</li>
-                    <li><strong>诉讼解决</strong>：如仲裁无法进行，可向有管辖权的人民法院提起诉讼</li>
-                </ol>
-            </div>
-        </div>
-        
-        <div class="footer">
+        <header>
             <a href="index.html" class="back-link">← 返回首页</a>
-            <p>本服务条款的最终解释权归淘宝上下文服务有限公司所有</p>
-            <p class="update-date">最后更新：2025年11月12日</p>
-        </div>
+            <h1>📄 用户协议</h1>
+            <div class="last-update">最后更新：2025年11月12日</div>
+        </header>
+        
+        <section>
+            <h2>1. 服务条款</h2>
+            <p>本用户协议是您与 <span class="placeholder">[公司名]</span>（以下简称"我们"）之间关于使用淘宝上下文服务的法律协议。</p>
+            <p>使用本服务即表示您同意接受本协议的全部条款和条件。</p>
+        </section>
+        
+        <section>
+            <h2>2. 计费条款</h2>
+            <p>服务费用根据您选择的套餐和使用情况而定。具体计费标准如下：</p>
+            <ul>
+                <li>基本版：<span class="placeholder">[价格]</span>/月</li>
+                <li>专业版：<span class="placeholder">[价格]</span>/月</li>
+                <li>企业版：<span class="placeholder">[价格]</span>/月</li>
+            </ul>
+            <p>费用将在每个计费周期开始时自动扣除。</p>
+        </section>
+        
+        <section>
+            <h2>3. SLA（服务级别协议）</h2>
+            <div class="sla-section">
+                <h3>服务可用性</h3>
+                <p>我们保证服务的年可用性达到 <span class="placeholder">99.9%</span>（不包括计划性维护时间）。</p>
+                
+                <h3>响应时间</h3>
+                <p>技术支持响应时间：工作日 <span class="placeholder">8小时</span> 内</p>
+                
+                <h3>数据保障</h3>
+                <p>数据备份频率：每天 <span class="placeholder">2次</span> 增量备份，每周1次全量备份</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>4. 试用与退订</h2>
+            <p>我们提供 <span class="placeholder">14天</span> 的免费试用服务。试用期间您可以免费体验所有功能。</p>
+            <p>试用结束后，您可以选择：</p>
+            <ul>
+                <li>升级为付费用户</li>
+                <li>停止使用服务</li>
+            </ul>
+            <p>退订服务请提前 <span class="placeholder">7天</span> 通知我们。</p>
+        </section>
+        
+        <section>
+            <h2>5. 用户权利与义务</h2>
+            <h3>用户权利：</h3>
+            <ul>
+                <li>使用服务的权利</li>
+                <li>获得技术支持的权利</li>
+                <li>投诉和建议的权利</li>
+            </ul>
+            
+            <h3>用户义务：</h3>
+            <ul>
+                <li>遵守法律法规</li>
+                <li>维护账号安全</li>
+                <li>不滥用服务</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>6. 服务变更与终止</h2>
+            <p>我们可能会根据业务需要变更或终止部分服务。</p>
+            <p>如果我们终止服务，将提前 <span class="placeholder">30天</span> 通知您，并提供合理的解决方案。</p>
+        </section>
+        
+        <section>
+            <h2>7. 责任限制</h2>
+            <p>我们不对以下情况承担责任：</p>
+            <ul>
+                <li>因不可抗力导致的服务中断</li>
+                <li>因用户原因导致的数据丢失</li>
+                <li>间接损失或预期利润损失</li>
+            </ul>
+            <p>我们的最大赔偿责任不超过您已支付的服务费用。</p>
+        </section>
+        
+        <section>
+            <h2>8. 知识产权</h2>
+            <p>服务中包含的所有知识产权均归我们所有。</p>
+            <p>您仅获得有限的使用许可，不得复制、修改或分发服务内容。</p>
+        </section>
+        
+        <section>
+            <h2>9. 争议解决</h2>
+            <p>本协议的解释和执行适用 <span class="placeholder">[所在地]</span> 法律。</p>
+            <p>如发生争议，双方应通过友好协商解决；协商不成的，可提交 <span class="placeholder">[所在地]</span> 仲裁机构仲裁。</p>
+        </section>
+        
+        <section>
+            <h2>10. 联系信息</h2>
+            <p>如果您有任何问题，请通过以下方式联系我们：</p>
+            <ul>
+                <li>邮箱：<span class="placeholder">[联系邮箱]</span></li>
+                <li>客服电话：<span class="placeholder">[电话号码]</span></li>
+                <li>地址：<span class="placeholder">[公司地址]</span></li>
+            </ul>
+        </section>
+        
+        <footer>
+            <p>© 2025 <span class="placeholder">[公司名]</span></p>
+        </footer>
     </div>
 </body>
 </html>
